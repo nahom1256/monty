@@ -25,7 +25,7 @@ int main(int naargc, char *naargv[])
  * @m: Number
  * Return: Upon sucess
  */
-stack_t *newnode(int m)
+stack_t *create_node(int m)
 {
 	stack_t *nanode;
 

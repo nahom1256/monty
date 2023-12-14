@@ -120,7 +120,7 @@ void nafind(char *naopcode, char *navalue, int fu, int format)
 
 
 /**
- * nacallfun - Calls.
+ * call_fun - Calls.
  * @func: Pointer
  * @na: string.
  * @val: string.
@@ -133,6 +133,7 @@ void call_fun(naop_func func, char *na, char *val, int fu, int format)
 	stack_t *node;
 	int flag;
 	int i;
+
 
 	flag = 1;
 	if (strcmp(na, "push") == 0)
@@ -158,3 +159,4 @@ void call_fun(naop_func func, char *na, char *val, int fu, int format)
 	else
 		func(&nhead, fu);
 }
+	
